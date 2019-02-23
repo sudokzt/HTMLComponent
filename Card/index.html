@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Card UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-head">
+        <img src="Y3.png" alt="" class="card-logo">
+        <img src="y-3-black.png" alt="" name='img' class="product-img" width="340px">
+        <div class="product-detail">
+          <h2>STACKED LOGO TEE</h2>
+          ミニマリストデザインの「Y-3 Stacked Logo Tee」。軽量のコットン素材を使用したダブルレイヤーの構造。
+        </div>
+        <span class="back-text">
+          KZT
+        </span>
+      </div>
+      <div class="card-body">
+        <div class="product-desc">
+          <span class="product-title">
+            <b>STACKED LOGO TEE</b>
+            <span class="badge">
+              New
+            </span>
+          </span>
+          <span class="product-caption">
+            Yohji Yamamoto's signature
+          </span>
+          <span class="product-rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star grey"></i>
+          </span>
+        </div>
+        <div class="product-properties">
+          <span class="product-size">
+            <h4>Size</h4>
+            <ul class="ul-size">
+              <li><a href="#" id="M" onclick="changeSize('M')">M</a></li>
+              <li><a href="#" id="L" onclick="changeSize('L')">L</a></li>
+              <li><a href="#" id="XL" onclick="changeSize('XL')" class="active">XL</a></li>
+              <li><a href="#" id="XXL" onclick="changeSize('XXL')">XXL</a></li>
+            </ul>
+          </span>
+          <span class="product-color">
+            <h4>Color</h4>
+            <ul class="ul-color">
+              <li><a href="#" class="white"></a></li>
+              <li><a href="#" class="black active" onclick="changeColor('black')"></a></li>
+              <li><a href="#" class="naivy" onclick="changeColor('naivy')"></a></li>
+            </ul>
+          </span>
+          <span class=" product-price">
+            USD<b>19,800</b>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    prevSelectedButton = 'XL';
+    changeSize = function (size) {
+      if (prevSelectedButton !== null) {
+        document.getElementById(prevSelectedButton).classList.remove('active');
+      }
+      switch (size) {
+        case 'M':
+          prevSelectedButton = 'M';
+          document.getElementById(prevSelectedButton).classList.add('active');
+          break;
+        case 'L':
+          prevSelectedButton = 'L';
+          document.getElementById(prevSelectedButton).classList.add('active');
+          break;
+        case 'XL':
+          prevSelectedButton = 'XL';
+          document.getElementById(prevSelectedButton).classList.add('active');
+          break;
+        case 'XXL':
+          prevSelectedButton = 'XXL';
+          document.getElementById(prevSelectedButton).classList.add('active');
+          break;
+        default:
+          break;
+      }
+    }
+
+    prevSelectedColor = 'black';
+    changeColor = function (color) {
+      if (prevSelectedColor !== null) {
+        document.getElementsByClassName(prevSelectedColor)[0].classList.remove('active');
+      }
+      switch (color) {
+        case 'black':
+          prevSelectedColor = 'black';
+          document.getElementsByClassName(prevSelectedColor)[0].classList.add('active');
+          console.log(document.img.src = "y-3-black.png");
+          break;
+        case 'naivy':
+          prevSelectedColor = 'naivy';
+          document.getElementsByClassName(prevSelectedColor)[0].classList.add('active');
+          console.log(document.img.src = "y-3-navy.png");
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
