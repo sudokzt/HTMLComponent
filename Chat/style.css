@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto","Yu Gothic UI Light","Yu Gothic UI" sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  color: #fff;
+  background: url(bg.jpg);
+  background-size: cover;
+}
+.container {
+  width: 60%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.7);
+          box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.7);
+  min-width: 60rem;
+}
+.users,
+#chat-screen {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100%;
+  min-width: 30rem;
+}
+.users {
+  background: #252839;
+}
+.users header p{
+  background: #677077;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.users ul {
+  list-style: none;
+}
+.users ul li {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.users ul li:nth-last-child{
+  border-bottom: none;
+}
+.users header h1 {
+  font-size: 5rem;
+  font-weight: 100;
+}
+.avatar img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.users .avatar {
+  display: flex;
+  margin: auto 0;
+  padding: 1rem;
+  position: relative;
+}
+.username {
+  font-size: 2.5rem;
+}
+/* .online {
+  background: #4ad99b;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 5.2rem;
+  bottom: 0.8rem
+}
+.offline {
+  background: #fa676a;
+}
+.users ul li .online {
+  border: 2px solid #fff;
+} */
+.users-list {
+  flex: 2;
+  margin: auto 0;
+}
+.text {
+  font-size: 0.7rem;
+  margin: auto 0;
+}
+.timestamp {
+  font-size: 0.6rem;
+  flex: 0.5;
+  margin: auto 5px;
+  text-align: center;
+}
+#chat-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
+  color: #333;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.1));
+  background-size: cover;
+}
+#chat-screen .msg-compose {
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+#chat-screen .msg-compose textarea {
+  flex-grow: 2;
+  margin: 0 1rem;
+  resize: none;
+  border: none;
+  padding-top: 5px;
+  height: 2rem;
+}
+#chat-screen .msg-compose textarea:focus {
+  outline: none;
+}
+#chat-screen .msg-compose i {
+  color: #c0c0c0;
+  cursor: pointer;
+}
+#messages {
+  overflow: auto;
+  flex-grow: 2;
+  padding: 1rem;
+}
+#messages article {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+#messages article .avatar {
+  margin-right: 1rem;
+}
+#messages .right .avatar {
+  margin-right: 0;
+}
+.msg {
+  display: flex;
+  justify-content: space-between;
+}
+.msg .pointer {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 1rem 1.5rem 0;
+  border-color: transparent rgb(191, 241, 140) transparent transparent;
+  margin: auto 0;
+}
+.inner-msg {
+  background: rgb(191, 241, 140);
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 0.1px solid #000;
+  border-radius: 0 4px 4px 4px;
+  box-shadow: 2px 2px 5px rgba(191, 241, 140, 0.1);
+  text-align: left;
+  margin: auto 0;
+}
+.right {
+  flex-direction: row-reverse;
+}
+.right .msg {
+  margin-right: 5px;
+  flex-direction: row-reverse;
+}
+.right .msg .pointer {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.5rem 1rem 0 0;
+  border-color: rgb(191, 241, 140) transparent transparent transparent;
+  margin: auto 0;
+}
+.right .msg .inner-msg {
+  border-radius: 4px 0 4px 4px;
+  box-shadow: -2px 2px 5px rgba(191, 241, 140, 0.1);
+}
+.fas,
+.fab {
+  margin-top: 2px;
+  font-size: 1.3em;
+}
+.users li:hover {
+  background: #4ad99b;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}

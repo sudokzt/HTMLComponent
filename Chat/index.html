@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <aside class="users">
+        <ul>
+          <li>
+            <div class="avatar top">
+              <img src="2.jpg" alt="">
+              <div class="online"></div>
+            </div>
+            <div class="users-list">
+              <div class="username">
+                <p>飛鳥</p>
+              </div>
+              <div class="text">
+                <p>オタク(笑)</p>
+              </div>
+            </div>
+            <div class="timestamp">
+              <p>8:32PM</p>
+            </div>
+          </li>
+          <li>
+            <div class="avatar top">
+              <img src="shun1.jpeg" alt="">
+              <div class="online offline"></div>
+            </div>
+            <div class="users-list">
+              <div class="username">
+                <p>旬</p>
+              </div>
+              <div class="text">
+                <p>ま〜〜っきの！</p>
+              </div>
+            </div>
+            <div class="timestamp">
+              <p>8:01PM</p>
+            </div>
+          </li>
+          <li>
+            <div class="avatar top">
+              <img src="4.jpg" alt="">
+              <div class="online"></div>
+            </div>
+            <div class="users-list">
+              <div class="username">
+                <p>ゆあちゃん</p>
+              </div>
+              <div class="text">
+                <p>Live like dead</p>
+              </div>
+            </div>
+            <div class="timestamp">
+              <p>- -</p>
+            </div>
+          </li>
+          <li>
+            <div class="avatar top">
+              <img src="shun2.jpg" alt="">
+              <div class="online"></div>
+            </div>
+            <div class="users-list">
+              <div class="username">
+                <p>２代目旬</p>
+              </div>
+              <div class="text">
+                <p>ここは僕の会社だ！！！</p>
+              </div>
+            </div>
+            <div class="timestamp">
+              <p>- -</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <section id="chat-screen">
+        <section id="messages">
+          <article>
+            <div class="avatar">
+              <img src="4.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>Hi カーズ。今度ご飯に行かない</p>
+              </div>
+            </div>
+          </article>
+          <article class="right">
+            <div class="avatar">
+              <img src="kzt.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>あーーーー</p>
+              </div>
+            </div>
+          </article>
+          <article class="right">
+            <div class="avatar">
+              <img src="kzt.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>ごめん、ゆあちゃんに付き合ってる暇ないんよね😅</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="avatar">
+              <img src="4.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>ねえ</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="avatar">
+              <img src="4.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>おーーーい</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="avatar">
+              <img src="4.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>😢</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="avatar">
+              <img src="4.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>おーーーーい！！！！！</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="avatar">
+              <img src="4.jpg" alt="">
+            </div>
+            <div class="msg">
+              <div class="pointer"></div>
+              <div class="inner-msg">
+                <p>私の誘いを断ったのは貴方が初めてよ。</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <div class="msg-compose">
+          <i class="fas fa-paperclip"></i>
+          <textarea name="" placeholder="Input a message..." cols="30" rows="10"></textarea>
+          <i class="fab fa-telegram-plane"></i>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+<!-- <script>
+  const dom = document.getElementById('messages');
+  const dom2 = document.getElementsByClassName('msg-compose')[0];
+  dom.style.display = 'none';
+  dom2.style.display = 'none';
+  document.getElementById('wrapper').addEventListener('click', () => {
+    dom.style.display = 'block';
+    dom2.style.display = 'flex';
+  }, false)
+</script> -->
+</html>
